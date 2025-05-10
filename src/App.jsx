@@ -173,7 +173,7 @@ function App() {
                 alt=""
               /> */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl font-bold tracking-widest text-center select-none">
-                ЩΣᄂᄃӨMΣ ƬӨ MY PЯӨFIᄂΣ
+                <img src="./ps5.png" alt="ps5" className="mx-auto mt-4 h-[55px]" />
               </div>
             </div>
           </div>
