@@ -108,13 +108,13 @@ function App() {
                   dominantBaseline="middle"
                   fontFamily="Arial Black"
                 >
-                  VI
+                  BRO
                 </text>
               </g>
             </mask>
           </defs>
           <image
-            href="./bg.png"
+            href="./20250510_1540_Serene Sunset Glow_simple_compose_01jtwtrvkff899124k295zvqqs.png"
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice"
@@ -133,7 +133,7 @@ function App() {
                   <div className="line w-5 h-2 bg-white"></div>
                 </div>
                 <h3 className="text-4xl -mt-[8px] leading-none text-white">
-                  Rockstar
+                  its ME
                 </h3>
               </div>
             </div>
@@ -144,15 +144,15 @@ function App() {
                 src="./sky.png"
                 alt=""
               />
-              <img
+              {/* <img
                 className="absolute scale-[1.8] rotate-[-3deg] bg top-0 left-0 w-full h-full object-cover"
                 src="./bg.png"
                 alt=""
-              />
+              /> */}
               <div className="text text-white flex flex-col gap-3 absolute top-20 left-1/2 -translate-x-1/2 scale-[1.4] rotate-[-10deg]">
-                <h1 className="text-[12rem] leading-none -ml-40">grand</h1>
-                <h1 className="text-[12rem] leading-none ml-20">theft</h1>
-                <h1 className="text-[12rem] leading-none -ml-40">auto</h1>
+                <h1 className="text-[12rem] leading-none ml-0">I</h1>
+                <h1 className="text-[12rem] leading-none ml-20">AM</h1>
+                <h1 className="text-[12rem] leading-none ml-40">ANANDAM</h1>
               </div>
               <img
                 className="absolute character -bottom-[150%] left-1/2 -translate-x-1/2  scale-[3] rotate-[-20deg]"
@@ -167,11 +167,14 @@ function App() {
                   Scroll Down
                 </h3>
               </div>
-              <img
+              {/* <img
                 className="absolute h-[55px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 src="./ps5.png"
                 alt=""
-              />
+              /> */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl font-bold tracking-widest text-center select-none">
+                ЩΣᄂᄃӨMΣ ƬӨ MY PЯӨFIᄂΣ
+              </div>
             </div>
           </div>
           <div className="w-full h-screen flex items-center justify-center bg-black">
@@ -187,28 +190,15 @@ function App() {
                 <h1 className="text-8xl">Still Running,</h1>
                 <h1 className="text-8xl">Not Hunting</h1>
                 <p className="mt-10 text-xl font-[Helvetica_Now_Display]">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Distinctio possimus, asperiores nam, omnis inventore nesciunt
-                  a architecto eveniet saepe, ducimus necessitatibus at
-                  voluptate.
+                  I am vibe coder and Just doing some editing stuff .
+                  <br/>
+                  Perfection is impossible just strive to do ur best 🤍
                 </p>
-                <p className="mt-3 text-xl font-[Helvetica_Now_Display]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  eius illum fugit eligendi nesciunt quia similique velit
-                  excepturi soluta tenetur illo repellat consectetur laborum
-                  eveniet eaque, dicta, hic quisquam? Ex cupiditate ipsa nostrum
-                  autem sapiente.
-                </p>
-                <p className="mt-10 text-xl font-[Helvetica_Now_Display]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  eius illum fugit eligendi nesciunt quia similique velit
-                  excepturi soluta tenetur illo repellat consectetur laborum
-                  eveniet eaque, dicta, hic quisquam? Ex cupiditate ipsa nostrum
-                  autem sapiente.
-                </p>
-                <button className="bg-yellow-500 px-10 py-10 text-black mt-10 text-4xl">
-                  Download Now
-                </button>
+                <a href="https://bento.me/anandam?fbclid=PAZXh0bgNhZW0CMTEAAaePYciWx8rpccp0KMbNBOZ9RFm70fphgLi-p524JeK3aNRB57zDoFW7MEmFnA_aem__AULZPbXyJv-29HDT843Pg" target="_blank" rel="noopener noreferrer">
+                  <button className="bg-yellow-500 px-10 py-10 text-black mt-10 text-4xl">
+                    EXPLORE
+                  </button>
+                </a>
               </div>
             </div>
           </div>
