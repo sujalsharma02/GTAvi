@@ -136,60 +136,9 @@ function Home() {
     });
   }, [showThirdIntro]);
 
-  // Zoom effect for "Still Running, Not Hunting" in second landing section
-  useGSAP(() => {
-    if (!showContent) return;
-
-    gsap.fromTo(
-      ".zoom-text",
-      {
-        scale: 1,
-        opacity: 1,
-        y: 0,
-      },
-      {
-        scale: 2,
-        opacity: 0,
-        y: -50,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: secondSectionRef.current,
-          start: "top 80%",
-          end: "bottom 20%",
-          scrub: 1,
-          toggleActions: "play none none reverse",
-        },
-      }
-    );
-  }, [showContent]);
+  // Removed zoom animation for "Still Running, Not Hunting"
 
   // Animation for person.png in third landing section
-  useGSAP(() => {
-    if (!showContent) return;
-
-    gsap.fromTo(
-      ".person-character",
-      {
-        scale: 0.8,
-        bottom: "-30%",
-        opacity: 0,
-      },
-      {
-        scale: 1,
-        bottom: "7vh",
-        opacity: 1,
-        duration: 1.5,
-        ease: "Expo.easeInOut",
-        scrollTrigger: {
-          trigger: thirdSectionRef.current,
-          start: "top 80%",
-          end: "top 20%",
-          scrub: 0.5,
-          toggleActions: "play none none reverse",
-        },
-      }
-    );
-  }, [showContent]);
 
   return (
     <>
@@ -278,7 +227,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full h-screen flex items-center justify-center bg-black" ref={secondSectionRef}>
+          <div className="zoom-section w-full h-screen flex items-center justify-center bg-black" ref={secondSectionRef}>
             <div className="cntnr flex text-white w-full h-[80%]">
               <div className="limg relative w-1/2 h-full">
                 <img
@@ -291,7 +240,7 @@ function Home() {
                 <h1 className="zoom-text">
                   Still Running,<br />Not Hunting
                 </h1>
-                <p className="text-xl font-[Helvetica_Now_Display] leading-relaxed mt-16">
+                <p className="text-4xl font-[Helvetica_Now_Display] leading-relaxed mt-56">
                   I am vibe coder and Just doing some editing stuff.
                   <br />
                   Perfection is impossible just strive to do ur best 🤍
@@ -301,10 +250,22 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="bg-yellow-500 px-10 py-10 text-black mt-20 text-4xl hover:bg-yellow-400 transition-colors duration-300">
+                  <button className="bg-yellow-500 px-16 py-12 text-black mt-32 text-5xl hover:bg-yellow-400 transition-colors duration-300">
                     EXPLORE
                   </button>
                 </a>
+                {/* Social Icons */}
+                <div className="flex gap-8 mt-[30%]">
+                  <a href="https://www.instagram.com/anantanandam" target="_blank" rel="noopener noreferrer" className="text-white text-5xl hover:text-pink-400 transition-colors duration-300">
+                    <i className="ri-instagram-line"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/anant-anandam-2a5b67330/" target="_blank" rel="noopener noreferrer" className="text-white text-5xl hover:text-blue-400 transition-colors duration-300">
+                    <i className="ri-linkedin-box-line"></i>
+                  </a>
+                  <a href="https://github.com/Cyansiiii" target="_blank" rel="noopener noreferrer" className="text-white text-5xl hover:text-gray-400 transition-colors duration-300">
+                    <i className="ri-github-line"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -313,15 +274,14 @@ function Home() {
               {/* Empty for now */}
             </div>
             <img
-              src="/rtee2.png"
+              src="/rtee1.png"
               alt="Background"
-              className="absolute top-0 left-0 w-full h-full object-contain z-0"
-              style={{ background: 'black' }}
-            />
-            <img
-              src="/person.png"
-              alt="Person"
-              className="absolute z-10 person-character"
+              className="absolute top-0 left-0 w-screen h-screen object-cover z-0"
+              style={{
+                background: 'linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, white 20%, white 80%, transparent 100%)',
+                maskImage: 'linear-gradient(to bottom, transparent 0%, white 20%, white 80%, transparent 100%)'
+              }}
             />
           </div>
         </div>
