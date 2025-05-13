@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "pricedown";
-  src: url("./pricedown.otf");
+  font-family: 'Pricedown';
+  src: url('/pricedown.woff2') format('woff2'),
+       url('/pricedown.woff') format('woff'),
+       url('/pricedown.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -10,4 +20,74 @@ body {
   width: 100%;
   height: 100%;
   font-family: "pricedown";
+  overflow-x: hidden;
+  position: relative;
+  background-color: black;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.smooth-fade-in {
+  animation: fadeInUp 1.2s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@keyframes textExit {
+  0% {
+    opacity: 1;
+    transform: scale(1) rotate(-10deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2) rotate(-10deg) translateY(-100px);
+  }
+}
+
+.text-exit-anim {
+  animation: textExit 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.zoom-text {
+  font-family: 'Pricedown', sans-serif;
+  font-size: 8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #fff;
+  text-align: left;
+  will-change: transform, opacity;
+}
+
+@media (max-width: 768px) {
+  .zoom-text {
+    font-size: 4rem;
+  }
+}
+
+.person-character {
+  position: absolute;
+  left: 51.5%;
+  bottom: 7vh; /* Unchanged position */
+  transform: translateX(-50%);
+  max-height: 90vh; /* Increased from 70vh */
+  max-width: 20vw; /* Increased from 13vw */
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 10;
+  will-change: transform, opacity;
 }

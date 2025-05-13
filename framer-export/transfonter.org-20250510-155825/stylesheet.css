@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Pricedown Bl';
+    src: url('PricedownBl-Regular.woff2') format('woff2'),
+        url('PricedownBl-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
